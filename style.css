@@ -140,26 +140,3 @@
   transform: scale(1.05);
 }
 
-.fun-facts {
-  list-style: none;
-  padding: 1rem 0 0 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.75rem;
-}
-
-.fun-facts li {
-  background-color: rgba(255, 255, 255, 0.07);
-  padding: 0.6rem 1rem;
-  border-radius: 999px;
-  font-size: 0.95rem;
-  text-align: center;
-  white-space: nowrap;
-  transition: background 0.3s ease;
-}
-
-.fun-facts li:hover {
-  background-color: rgba(255, 255, 255, 0.15);
-}
-
