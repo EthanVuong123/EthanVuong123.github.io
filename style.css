@@ -167,3 +167,17 @@
   color: #111;
 }
 
+.resume-link {
+  margin-top: 1.5rem;
+  text-decoration: none;
+  color: #6FFFE9;
+  font-weight: bold;
+  font-size: 1rem;
+  align-self: flex-start; /* aligns to the left within the box */
+  transition: color 0.3s ease;
+}
+
+.resume-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
