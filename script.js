@@ -32,11 +32,43 @@ function moveSlide(direction, section) {
 }
 
 function showHighlanderCon() {
-  document.getElementById("highlander-gaming").style.display = "none";
-  document.getElementById("highlander-con").style.display = "block";
+  const gaming = document.getElementById("highlander-gaming");
+  const con = document.getElementById("highlander-con");
+
+  gaming.classList.remove("experience-block");
+  con.classList.remove("experience-block");
+
+  gaming.style.opacity = 0;
+
+  setTimeout(() => {
+    gaming.style.display = "none";
+    con.style.display = "block";
+    con.style.opacity = 0;
+    con.classList.add("experience-block");
+
+    setTimeout(() => {
+      con.style.opacity = 1;
+    }, 50);
+  }, 300);
 }
 
 function showHighlanderGaming() {
-  document.getElementById("highlander-con").style.display = "none";
-  document.getElementById("highlander-gaming").style.display = "block";
+  const gaming = document.getElementById("highlander-gaming");
+  const con = document.getElementById("highlander-con");
+
+  con.classList.remove("experience-block");
+  gaming.classList.remove("experience-block");
+
+  con.style.opacity = 0;
+
+  setTimeout(() => {
+    con.style.display = "none";
+    gaming.style.display = "block";
+    gaming.style.opacity = 0;
+    gaming.classList.add("experience-block");
+
+    setTimeout(() => {
+      gaming.style.opacity = 1;
+    }, 50);
+  }, 300);
 }
