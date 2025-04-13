@@ -18,7 +18,9 @@ let currentSlideIndex = {
 };
 
 function moveSlide(direction, section) {
-  const slides = document.querySelectorAll(`.${section}-track .carousel-slide`);
+  const track = document.querySelector(`.${section}-track`);
+  const slides = track.querySelectorAll(".carousel-slide");
+
   currentSlideIndex[section] += direction;
 
   if (currentSlideIndex[section] < 0) {
@@ -28,7 +30,7 @@ function moveSlide(direction, section) {
   }
 
   const offset = -currentSlideIndex[section] * 100;
-  document.querySelector(`.${section}-track`).style.transform = `translateX(${offset}%)`;
+  track.style.transform = `translateX(${offset}%)`;
 }
 
 function showHighlanderCon(event) {
