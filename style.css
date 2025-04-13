@@ -340,6 +340,7 @@
   max-width: 1100px;
   margin: 0 auto 5rem auto;
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  overflow: hidden; /*prevents image overflow */
 }
 
 .experience-text {
