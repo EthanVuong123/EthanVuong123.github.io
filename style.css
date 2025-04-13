@@ -181,3 +181,99 @@
   color: #fff;
   text-decoration: underline;
 }
+
+.experience-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.experience-text {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experience-text h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #0D1B2A;
+}
+
+.experience-text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+.section-link {
+  color: #3a506b;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  align-self: flex-start;
+  transition: color 0.3s ease;
+}
+
+.section-link:hover {
+  color: #0D1B2A;
+}
+
+/* Reuse carousel styles from earlier */
+.carousel-container {
+  position: relative;
+  max-width: 500px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+}
+
+.carousel-slide {
+  min-width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(13, 27, 42, 0.7);
+  color: white;
+  border: none;
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  z-index: 1;
+  transition: background 0.3s ease;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(13, 27, 42, 0.9);
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
