@@ -188,6 +188,13 @@
   gap: 2rem;
   align-items: stretch;
   justify-content: center;
+  background-color: #0D1B2A;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  max-width: 1100px;
+  margin: 0 auto 5rem auto;
+  overflow: hidden;
 }
 
 .experience-text {
@@ -256,7 +263,6 @@
   object-fit: cover; /* 👈 zoom in to fill the space */
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background-color: #fff;
 }
 
 .carousel-btn {
@@ -387,8 +393,8 @@
 .con-carousel {
   position: relative;
   max-width: 500px;
-  height: 400px; /* or whatever matches the first con image */
-  flex: 1;
+  height: 350px; /* or whatever matches the first con image */
+  flex-shrink: 0;
   overflow: hidden;
   border-radius: 12px;
   background-color: #f0f0f0;
