@@ -260,8 +260,7 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   background-color: #fff; /* ensures transparency in images doesn't look odd */
   padding: 0.5rem;
-  box-sizing: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.1);  
+  box-sizing: border-box; 
 }
 
 .carousel-btn {
