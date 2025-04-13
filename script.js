@@ -31,7 +31,8 @@ function moveSlide(direction, section) {
   document.querySelector(`.${section}-track`).style.transform = `translateX(${offset}%)`;
 }
 
-function showHighlanderCon() {
+function showHighlanderCon(event) {
+  event.preventDefault(); //<--prevents scroll to top
   const gaming = document.getElementById("highlander-gaming");
   const con = document.getElementById("highlander-con");
 
@@ -52,7 +53,8 @@ function showHighlanderCon() {
   }, 300);
 }
 
-function showHighlanderGaming() {
+function showHighlanderGaming(event) {
+  event.preventDefault(); //<--prevents scroll to top
   const gaming = document.getElementById("highlander-gaming");
   const con = document.getElementById("highlander-con");
 
