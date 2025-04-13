@@ -297,6 +297,14 @@
 /* Work Section Styling   */
 /* ---------------------- */
 
+.work-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #0D1B2A;
+  margin-top: -30px;
+  margin-bottom: 3rem;
+}
+
 #work {
   background-color: #F5EFE6;
   color: #fff;
