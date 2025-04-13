@@ -42,7 +42,59 @@
 
   <section id="work">
     <h2>Work</h2>
-    <p>This is your work section.</p>
+    <!-- Highlander Gaming Overview -->
+<div id="highlander-gaming" class="experience-block">
+  <div class="experience-layout">
+    <div class="carousel-container">
+      <div class="carousel">
+        <button class="carousel-btn prev" onclick="moveSlide(-1, 'gaming')">❮</button>
+        <div class="carousel-track gaming-track">
+          <img src="hlg1.HEIC" class="carousel-slide" />
+          <img src="gaming2.jpg" class="carousel-slide" />
+          <img src="gaming3.jpg" class="carousel-slide" />
+          <img src="gaming4.jpg" class="carousel-slide" />
+          <img src="gaming5.jpg" class="carousel-slide" />
+        </div>
+        <button class="carousel-btn next" onclick="moveSlide(1, 'gaming')">❯</button>
+      </div>
+    </div>
+
+    <div class="experience-text">
+      <h2>Highlander Gaming</h2>
+      <p>
+        As a Lead Events Coordinator for Highlander Gaming at UC Riverside, I oversaw the planning and execution of over a dozen campus-wide gaming activations. From grassroots tournaments to corporate-sponsored collaborations, I worked with both student teams and industry partners to bring inclusive, community-building events to life.
+      </p>
+      <a href="#" class="section-link" onclick="showHighlanderCon()">Highlander Con →</a>
+    </div>
+  </div>
+</div>
+
+<!-- Highlander Con Detail Section -->
+<div id="highlander-con" class="experience-block" style="display: none;">
+  <div class="experience-layout">
+    <div class="carousel-container">
+      <div class="carousel">
+        <button class="carousel-btn prev" onclick="moveSlide(-1, 'con')">❮</button>
+        <div class="carousel-track con-track">
+          <img src="hlc1.jpg" class="carousel-slide" />
+          <img src="con2.jpg" class="carousel-slide" />
+          <img src="con3.jpg" class="carousel-slide" />
+          <img src="con4.jpg" class="carousel-slide" />
+        </div>
+        <button class="carousel-btn next" onclick="moveSlide(1, 'con')">❯</button>
+      </div>
+    </div>
+
+    <div class="experience-text">
+      <h2>Highlander Con</h2>
+      <p>
+        Highlander Con was our flagship annual convention — a multi-faceted celebration of gaming, anime, and tech culture that attracted over 500 attendees. I led logistics, guest outreach, floor planning, and vendor coordination, ensuring smooth execution from concept to day-of management.
+      </p>
+      <a href="#" class="section-link" onclick="showHighlanderGaming()">← Back</a>
+    </div>
+  </div>
+</div>
+
   </section>
 
   <section id="contact">
