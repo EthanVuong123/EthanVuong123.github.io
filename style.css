@@ -382,13 +382,21 @@
   color: #ffffff;
 }
 
-.bubble-divider {
+.section-divider {
   width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: scaleY(-1); /* flip the wave */
-  background-color: #F5EFE6;
+  height: 40px;
+  background-color: #fff;
+  border-top: 4px solid #0D1B2A;
 }
+
+.section-divider {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  border-top: 4px solid #0D1B2A;
+  box-shadow: 0 -5px 10px rgba(0,0,0,0.05);
+}
+
 
 .bubble-divider svg {
   display: block;
