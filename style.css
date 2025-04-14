@@ -326,7 +326,7 @@ body {
 .work-title {
   text-align: center;
   font-size: 2.5rem;
-  color: #fff !important; /* changed from black/dark to white */
+  color: #fff; /* changed from black/dark to white */
   margin-top: -30px;
   margin-bottom: 3rem;
 }
