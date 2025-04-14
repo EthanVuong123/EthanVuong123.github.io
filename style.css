@@ -171,7 +171,8 @@
 
 #about {
   background-color: #F5EFE6;
-  color: #111;
+  color: #0D1B2A; /* optional: use a readable text color */
+  padding: 5rem 2rem;
 }
 
 .resume-link {
