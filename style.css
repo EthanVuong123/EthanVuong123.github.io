@@ -426,3 +426,15 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   background-color: #fff;
 }
+
+@media (max-width: 768px) {
+  .experience-layout {
+    flex-direction: column;
+  }
+
+  .con-carousel,
+  .experience-text {
+    max-width: 100%;
+    width: 100%;
+  }
+}
