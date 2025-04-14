@@ -170,9 +170,13 @@
 }
 
 #about {
-  background-color: #F5EFE6;
+  background-color: #F5EFE6 !important;
   color: #0D1B2A; /* optional: use a readable text color */
   padding: 5rem 2rem;
+}
+
+body {
+  background-color: #F5EFE6;
 }
 
 .resume-link {
@@ -322,7 +326,7 @@
 .work-title {
   text-align: center;
   font-size: 2.5rem;
-  color: #fff; /* changed from black/dark to white */
+  color: #fff !important; /* changed from black/dark to white */
   margin-top: -30px;
   margin-bottom: 3rem;
 }
