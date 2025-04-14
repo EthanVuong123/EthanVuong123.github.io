@@ -76,3 +76,15 @@ function showHighlanderGaming(event) {
     }, 50);
   }, 300);
 }
+
+function showCorsairTradeShows(event) {
+  event.preventDefault();
+  document.getElementById("corsair-overview").style.display = "none";
+  document.getElementById("corsair-tradeshows").style.display = "block";
+}
+
+function showCorsairOverview(event) {
+  event.preventDefault();
+  document.getElementById("corsair-tradeshows").style.display = "none";
+  document.getElementById("corsair-overview").style.display = "block";
+}
