@@ -343,9 +343,10 @@
 
 .experience-layout {
   display: flex;
+  flex-direction: row;  
   flex-wrap: wrap;
   gap: 2rem;
-  justify-content: space-between;  
+  justify-content: center;  
   align-items: stretch;
   background-color: #0D1B2A;
   padding: 2rem;  
@@ -353,16 +354,16 @@
   box-shadow: 0 0 20px rgba(0,0,0,0.2);
   max-width: 1100px;
   margin: 0 auto 5rem auto;
-  overflow: hidden; /*prevents image overflow */
 }
 
 .experience-text {
   flex: 1;
-  min-width: 250px;
-  max-width: 50%;
+  min-width: 300px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #fff;
 }
 
 .experience-text h2 {
@@ -411,6 +412,18 @@
   justify-content: center; 
 }
 
+.carousel-container {
+  width: 500px;
+  height: 350px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .con-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
@@ -430,9 +443,10 @@
 @media (max-width: 768px) {
   .experience-layout {
     flex-direction: column;
+    align-iems: center;   
   }
 
-  .con-carousel,
+  .carousel-container,
   .experience-text {
     max-width: 100%;
     width: 100%;
