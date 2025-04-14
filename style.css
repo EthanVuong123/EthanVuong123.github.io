@@ -326,24 +326,16 @@ body {
 .work-title {
   text-align: center;
   font-size: 2.5rem;
-  color: #fff; /* changed from black/dark to white */
+  color: #0D1B2A;
   margin-top: -30px;
   margin-bottom: 3rem;
 }
 
 #work {
   background-color: #F5EFE6;
-  color: #000000;
+  color: #fff;
   padding: 5rem 2rem;
   position: relative;
-}
-
-.work-title {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #0D1B2A;
-  margin-top: -30px;
-  margin-bottom: 3rem;
 }
 
 .experience-layout {
