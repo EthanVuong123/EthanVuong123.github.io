@@ -335,17 +335,17 @@
 }
 
 .experience-layout {
-  background-color: #0D1B2A;
-  border-radius: 12px;
-  padding: 2rem;
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
+  justify-content: center;  
   align-items: stretch;
-  justify-content: center;
+  background-color: #0D1B2A;
+  padding: 2rem;  
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.2);
   max-width: 1100px;
   margin: 0 auto 5rem auto;
-  box-shadow: 0 0 20px rgba(0,0,0,0.2);
   overflow: hidden; /*prevents image overflow */
 }
 
