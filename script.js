@@ -14,7 +14,7 @@ window.onload = typeWriter;
 
 let currentSlideIndex = {
   gaming: 0,
-  con: 0
+  con: 0,
   corsair: 0,
   tradeshow: 0,
   aspb: 0
