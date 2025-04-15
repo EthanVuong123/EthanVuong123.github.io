@@ -21,7 +21,8 @@ let currentSlideIndex = {
   con: 0,
   corsair: 0,
   tradeshow: 0,
-  aspb: 0
+  aspb: 0,
+  acc: 0
 };
 
 function moveSlide(direction, section) {
