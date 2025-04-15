@@ -230,12 +230,25 @@
   </div>
 </div>
 
-  </section>
+<!-- White Divider -->
+<div class="section-divider"></div>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: vuongethan18@gmail.com</p>
-  </section>
+<!-- CONTACT ME SECTION -->
+<section id="contact">
+  <h2 class="contact-title">Contact Me</h2>
+
+  <form action="https://formsubmit.co/vuongethan18@gmail.com" method="POST" class="contact-form">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    
+    <!-- Optional hidden fields -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    
+    <button type="submit">Send Message</button>
+  </form>
+</section>
 
   <script src="script.js"></script>
 </body>
