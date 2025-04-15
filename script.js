@@ -1,5 +1,5 @@
+// Typewriter intro animation
 const text = "Hi, I'm Ethan — a passionate event planner and creative builder.";
-const speed = 50;
 let index = 0;
 
 function typeWriter() {
@@ -10,8 +10,11 @@ function typeWriter() {
   }
 }
 
-window.onload = typeWriter;
+window.onload = function () {
+  typeWriter();
+};
 
+// Carousel tracking
 let currentSlideIndex = {
   gaming: 0,
   con: 0,
@@ -23,6 +26,8 @@ let currentSlideIndex = {
 function moveSlide(direction, section) {
   const track = document.querySelector(`.${section}-track`);
   const slides = track.querySelectorAll(".carousel-slide");
+
+  if (!track || slides.length === 0) return;
 
   currentSlideIndex[section] += direction;
 
@@ -36,48 +41,17 @@ function moveSlide(direction, section) {
   track.style.transform = `translateX(${offset}%)`;
 }
 
+// Section toggle functions
 function showHighlanderCon(event) {
-  event.preventDefault(); //<--prevents scroll to top
-  document.getElementById("highlander-gaming");
-  document.getElementById("highlander-con");
-
-  gaming.classList.remove("experience-block");
-  con.classList.remove("experience-block");
-
-  gaming.style.opacity = 0;
-
-  setTimeout(() => {
-    gaming.style.display = "none";
-    con.style.display = "block";
-    con.style.opacity = 0;
-    con.classList.add("experience-block");
-
-    setTimeout(() => {
-      con.style.opacity = 1;
-    }, 50);
-  }, 300);
+  event.preventDefault();
+  document.getElementById("highlander-gaming").style.display = "none";
+  document.getElementById("highlander-con").style.display = "block";
 }
 
 function showHighlanderGaming(event) {
-  event.preventDefault(); //<--prevents scroll to top
-  document.getElementById("highlander-gaming");
-  document.getElementById("highlander-con");
-
-  con.classList.remove("experience-block");
-  gaming.classList.remove("experience-block");
-
-  con.style.opacity = 0;
-
-  setTimeout(() => {
-    con.style.display = "none";
-    gaming.style.display = "block";
-    gaming.style.opacity = 0;
-    gaming.classList.add("experience-block");
-
-    setTimeout(() => {
-      gaming.style.opacity = 1;
-    }, 50);
-  }, 300);
+  event.preventDefault();
+  document.getElementById("highlander-con").style.display = "none";
+  document.getElementById("highlander-gaming").style.display = "block";
 }
 
 function showCorsairTradeShows(event) {
