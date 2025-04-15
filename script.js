@@ -1,5 +1,6 @@
 // Typewriter intro animation
 const text = "Hi, I'm Ethan — a passionate event planner and creative builder.";
+const speed = 50;
 let index = 0;
 
 function typeWriter() {
