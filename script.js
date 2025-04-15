@@ -1,12 +1,12 @@
 const text = "Hi, I'm Ethan — a passionate event planner and creative builder.";
 const speed = 50;
-let i = 0;
+let index = 0;
 
 function typeWriter() {
-  if (i < text.length) {
-    document.getElementById("typewriter").innerHTML += text.charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
+  if (index < text.length) {
+    document.getElementById("typewriter").innerHTML += text.charAt(index);
+    index++;
+    setTimeout(typeWriter, 30);
   }
 }
 
@@ -38,8 +38,8 @@ function moveSlide(direction, section) {
 
 function showHighlanderCon(event) {
   event.preventDefault(); //<--prevents scroll to top
-  const gaming = document.getElementById("highlander-gaming");
-  const con = document.getElementById("highlander-con");
+  document.getElementById("highlander-gaming");
+  document.getElementById("highlander-con");
 
   gaming.classList.remove("experience-block");
   con.classList.remove("experience-block");
@@ -60,8 +60,8 @@ function showHighlanderCon(event) {
 
 function showHighlanderGaming(event) {
   event.preventDefault(); //<--prevents scroll to top
-  const gaming = document.getElementById("highlander-gaming");
-  const con = document.getElementById("highlander-con");
+  document.getElementById("highlander-gaming");
+  document.getElementById("highlander-con");
 
   con.classList.remove("experience-block");
   gaming.classList.remove("experience-block");
