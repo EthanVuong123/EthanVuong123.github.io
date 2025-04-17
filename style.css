@@ -504,8 +504,24 @@ body {
   text-align: center;
   font-size: 2.5rem;
   color: #0D1B2A;
-  margin-top: -30px;
   margin-bottom: 3rem;
+}
+
+/* Subtext under the title */
+.contact-subtext {
+  font-size: 1.2rem;
+  color: #0D1B2A;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* Smaller "Contact Me" heading */
+.contact-title {
+  font-size: 1.5rem;
+  color: #0D1B2A;
+  text-align: left;
+  align-self: flex-start;
+  margin-bottom: 1rem;
 }
 
 /* Contact form section */
