@@ -513,6 +513,9 @@ body {
   color: #0D1B2A;
   text-align: center;
   margin-bottom: 3rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;  
 }
 
 /* Smaller "Contact Me" heading */
@@ -523,12 +526,20 @@ body {
   align-self: flex-start;
   width: 100%;
   max-width: 600px;
-  padding-left: 2px;  
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;  
 }
 
 @media (max-width: 600px) {
   .contact-title {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-subtext {
+    white-space: normal;
   }
 }
 
