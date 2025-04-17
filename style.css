@@ -488,6 +488,10 @@ body {
   }
 }
 
+.experience-block {
+  scroll-margin-top: 100px; /* adjust to taste (80–120px usually works well) */
+}
+
 /* Divider line (same as previous sections) */
 .section-divider {
   width: 100%;
