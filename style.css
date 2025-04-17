@@ -304,10 +304,6 @@ body {
   transition: background 0.3s ease;
 }
 
-.carousel-btn:hover {
-  background-color: rgba(13, 27, 42, 0.9);
-}
-
 .carousel-btn.prev {
   left: 10px;
 }
