@@ -346,6 +346,30 @@ body {
   position: relative;
 }
 
+.work-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 3rem;
+}
+
+.work-index a {
+  color: #0D1B2A;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #fff;
+  border: 2px solid #0D1B2A;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.work-index a:hover {
+  background-color: #0D1B2A;
+  color: #fff;
+}
+
 .experience-layout {
   display: flex;
   flex-direction: row;  
@@ -523,4 +547,8 @@ body {
 
 .contact-form button:hover {
   background-color: #3a506b;
+}
+
+html {
+  scroll-behavior: smooth;
 }
