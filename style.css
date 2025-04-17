@@ -432,18 +432,15 @@ body {
 
 /* Highlander Con Specific Carousel Layout */
 .con-carousel {
+  width: 500px;
+  height: 350px;
   position: relative;
-  width: 45%;
-  height: auto; /* or whatever matches the first con image */
-  aspect-ratio: 5 / 3;
-  flex-shrink: 0;
   overflow: hidden;
+  flex-shrink: 0;
   border-radius: 12px;
   background-color: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
 }
+
 
 .carousel-container {
   width: 500px;
@@ -467,9 +464,9 @@ body {
 .con-track .carousel-slide {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 👈 Zoom + crop to fill the area */
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
+  object-position: center;
+  display: block;
   background-color: #fff;
 }
 
