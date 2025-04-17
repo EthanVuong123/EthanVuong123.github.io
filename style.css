@@ -519,9 +519,17 @@ body {
 .contact-title {
   font-size: 1.5rem;
   color: #0D1B2A;
-  text-align: left;
-  align-self: flex-start;
   margin-bottom: 1rem;
+  align-self: flex-start;
+  width: 100%;
+  max-width: 600px;
+  padding-left: 2px;  
+}
+
+@media (max-width: 600px) {
+  .contact-title {
+    font-size: 1.2rem;
+  }
 }
 
 /* Contact form section */
