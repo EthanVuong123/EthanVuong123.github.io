@@ -567,3 +567,13 @@ html {
   margin-bottom: 1.5rem;
   color: #6FFFE9; /* optional: use a lighter accent or #fff */
 }
+
+.org-subheading a {
+  text-decoration: underline;
+  color: #6FFFE9; /* or #fff for a more neutral look */
+  transition: color 0.3s ease;
+}
+
+.org-subheading a:hover {
+  color: #ffffff;
+}
