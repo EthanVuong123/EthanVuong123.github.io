@@ -396,13 +396,17 @@ body {
   color: #ffffff;
 }
 
-.section-divider {
-  width: 100vw; /* ✅ stretches across entire screen */
+}.section-divider {
+  width: 100vw; /* full viewport width */
   height: 20px;
   background-color: #fff;
   margin: 0;
   padding: 0;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
+
 
 /* Highlander Con Specific Carousel Layout */
 .con-carousel {
