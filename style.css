@@ -467,10 +467,7 @@ body {
   height: 100%;
   object-fit: cover;
   object-position: center;  
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  background-color: #fff;  
+  display: block; 
 }
 
 @media (max-width: 768px) {
