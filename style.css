@@ -253,8 +253,8 @@ body {
 
 /* Reuse carousel styles from earlier */
 .carousel-container {
-  width: 600px;
-  height: 400px; 
+  width: 500px;
+  height: 300px; 
   flex-shrink: 0;
   position: relative;  
   overflow: hidden;
