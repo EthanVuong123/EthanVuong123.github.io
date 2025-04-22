@@ -543,6 +543,60 @@ body {
   }
 }
 
+/* Tradeshow Specific Carousel Layout */
+.tradeshow-carousel {
+  width: 500px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+}
+
+
+.carousel-container {
+  height: 350px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  aspect-ratio: 3 / 2;  
+}
+
+.tradeshow-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.tradeshow-track .carousel-slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;  
+  display: block; 
+}
+
+@media (max-width: 768px) {
+  .experience-layout {
+    flex-direction: column;
+    align-iems: center;   
+  }
+
+  .carousel-container,
+  .experience-text {
+    max-width: 100%;
+    width: 100%;
+    height: auto;  
+  }
+}
+
 /* ASPB Specific Carousel Layout */
 .aspb-carousel {
   width: 500px;
